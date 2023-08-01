@@ -1,0 +1,13 @@
+{
+  "calva.evalOnSave": true,
+  "editor.formatOnSave": false,
+  "runOnSave.statusMessageTimeout": 3000,
+  "runOnSave.commands": [
+    {
+      "match": ".*\\.clj[cs]?$",
+      "command": "cljstyle fix ${file}",
+      "runIn": "backend",
+      "async": true
+    }
+  ]
+}
