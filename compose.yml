@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  clj:
+    build:
+      context: .
+      dockerfile: ./docker/clj/Dockerfile
+    container_name: myclj
+    tty: true
